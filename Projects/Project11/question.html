@@ -1,0 +1,53 @@
+<!-- wap using js for webpage to display what browser information -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <style>
+        .btn {
+            display: block;
+            margin: 30px auto;
+            padding: 20px;
+            width: 20%;
+            cursor: pointer;
+            border-radius: 20px;
+            
+
+        }
+        .btn:hover {
+            cursor: pointer;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        function getInfo() {
+            document.write("Cookie enabled " + window.navigator.cookieEnabled);
+            
+
+            document.write("<br>Java enabled " + window.navigator.javaEnabled);
+            document.write("<br>Java enabled " + window.navigator.platform);
+            document.write("<br>Java enabled " + window.navigator.product);
+            document.write("<br>Java enabled " + window.navigator.appVersion);            
+            document.write("<br>Java enabled " + window.navigator.language);
+            // document.write()            
+
+            // document.write(window.print());
+            document.write(window.VideoPlaybackQuality);
+            document.write(window.open('','','width=auto,height=100%'));
+
+        }
+        var object = new Date();
+        // alert("Hello");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        <input type="button" value="BrowerInfo" onclick="getInfo()" class="btn">
+    </form>
+    </div>
+</body>
+</html>
